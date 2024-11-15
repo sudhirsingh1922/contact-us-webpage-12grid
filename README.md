@@ -41,4 +41,4 @@ The task involves creating a **responsive web page** from a design available on 
 ### **Clone the Repository**
 To get started, clone the repository to your local machine:
 ```bash
-git clone <repository-link>
+git clone https://github.com/sudhirsingh1922/contact-us-webpage-12grid
