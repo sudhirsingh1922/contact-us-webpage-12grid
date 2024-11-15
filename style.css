@@ -1,0 +1,103 @@
+/* General Styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  /* Header with transparent background and blur effect on scroll */
+  header {
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  }
+  header.scrolled {
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(15px);
+  }
+  
+  /* Shadow box styling for the contact form section */
+  .shadow-box {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    margin-top: 5%; /* Space between header and form */
+  }
+  
+  
+  /* Red asterisk for required fields */
+  .required {
+    color: red;
+  }
+  
+  /* Map Overlay with Padding */
+  .map-overlay {
+    color: white;
+    background-color: rgba(0, 0, 139, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive Iframe for Map */
+  .map-container iframe {
+    width: 100%;
+    max-width: 100%;
+    height: 300px;
+  }
+  
+  /* Image Gallery Styling with Hover Effect and Responsiveness */
+.image-gallery .img-fluid {
+    width: 100%;
+    height: 150px; /* Fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    position: relative;
+    transition: 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .image-gallery .img-fluid:hover {
+    filter: brightness(50%); /* Darken image on hover */
+  }
+  
+  .image-gallery .img-fluid:hover::after {
+    content: attr(alt); /* Display the alt text */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  /* Responsive Image Gallery */
+  @media (max-width: 768px) {
+    .image-gallery .img-fluid {
+      height: 120px; /* Adjust the height for smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .image-gallery .img-fluid {
+      height: 100px; /* Further adjust the height for very small screens */
+    }
+  }
+  
+  
+  
+  /* Footer Styling */
+footer {
+    background-color: #00001d; 
+    color: #fff;
+    padding: 20px 0; 
+    text-align: right;
+  }
+  
+  footer img {
+    width: 150px; /* Adjust the size as needed */
+  }
+  
+  

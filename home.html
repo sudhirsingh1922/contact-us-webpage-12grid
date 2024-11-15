@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - OnestopNDT</title>
+  <!-- Include Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section with Transparent Background -->
+  <header class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a href="#" class="navbar-brand">
+        <img src="asset/logo.png" alt="OnestopNDT Logo" style="width: 150px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+    </div>
+  </header>
+
+  <!-- Contact Form Section with Margin-Top -->
+  <section id="contact" class="contact-form container my-5 pt-5 shadow-box">
+    <h2>Got any questions?</h2>
+    <p>Let’s discuss it over a cup of coffee.</p>
+    <form id="contactForm" class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="name" class="form-label">Name <span class="required">*</span></label>
+        <input type="text" class="form-control" id="name" required>
+        <div class="invalid-feedback">Please enter your name.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="organization" class="form-label">Organization Name </label>
+        <input type="text" class="form-control" id="organization">
+      </div>
+      <div class="col-md-6">
+        <label for="email" class="form-label">Email ID <span class="required">*</span></label>
+        <input type="email" class="form-control" id="email" required>
+        <div class="invalid-feedback">Please enter a valid email address.</div>
+      </div>
+      <div class="col-md-6">
+        <label for="contactNumber" class="form-label">Contact Number <span class="required">*</span></label>
+        <input type="tel" class="form-control" id="contactNumber" required pattern="^\d{10}$">
+        <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message"></textarea>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <div id="successMessage" class="text-success mt-3" style="display:none;">Thank you! Your message has been sent.</div>
+      </div>
+    </form>
+  </section>
+
+  <!-- Map Section with Find Us Here Heading and Padding in Contact Info -->
+  <section class="map-container container my-5">
+    <h3 class="text-center mb-4">Find Us Here</h3>
+    <div class="map-overlay text-center p-3">
+      <h4>OnestopNDT</h4>
+      <p>PAP/R/406 Rabale MIDC, Navi Mumbai, Maharashtra - 400701</p>
+      <p>Landline: 022 4131 0099</p>
+      <a href="https://www.google.com/maps" target="_blank" class="btn btn-light">Google Map Link</a>
+    </div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.9145580139945!2d73.02966231546465!3d19.11413358706662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b90c9f4f4d81%3A0xb2e3edbc0a0fd65c!2sRabale%2C%20Navi%20Mumbai%2C%20Maharashtra%20400701!5e0!3m2!1sen!2sin!4v1699882739086!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <!-- Image Gallery Section Above Footer -->
+  <section class="image-gallery container my-5">
+    <div class="row text-center">
+      <div class="col-2"> <img src="asset/companies.jpeg" class="img-fluid rounded" alt="Company">Company</div>
+      <div class="col-2"><img src="asset/jobs.jpeg" class="img-fluid rounded" alt="Jobs">Jobs</div>
+      <div class="col-2"><img src="asset/articles.jpeg" class="img-fluid rounded" alt="Articles">Articles</div>
+      <div class="col-2"><img src="asset/webinars.jpeg" class="img-fluid rounded" alt="Webinars">Webinars</div>
+      <div class="col-2"><img src="asset/forums.jpeg" class="img-fluid rounded" alt="Forums">Forums</div>
+      <div class="col-2"><img src="asset/notes.jpeg" class="img-fluid rounded" alt="Application Notes">Application Notes</div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  
+    <footer >
+        <div class="container text-center">
+        <a href="#">
+            <img src="asset/logo.png" alt="OnestopNDT Logo" class="footer-logo">
+        </a>
+        </div>
+    </footer>
+  
+
+  <!-- Include Bootstrap JS and custom script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
